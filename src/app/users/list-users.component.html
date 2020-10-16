@@ -1,0 +1,23 @@
+<div class='table-responsive'>
+    <table class='table'>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>Date of Birth</th>
+          <th>Is Active</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let user of users'>
+            <td>{{ user.username | uppercase }}</td>
+            <td>{{ user.gender | uppercase }}</td>
+            <td>{{ user.email | lowercase }}</td>
+            <td>{{ user.phoneNumber }}</td>
+            <td>{{ user.dateOfBirth }}</td>
+            <td>{{ user.isActive }}</td>
+        </tr>
+      </tbody>
+    </table>
